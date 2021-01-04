@@ -14,3 +14,5 @@ install:
 branches:
   only:
     - master
+after_failure:
+  - cat /Users/travis/Library/Caches/CocoaPods/Pods/Release/OpenSSL-Apple/*/bin/*/build-openssl-*.log
